@@ -4,7 +4,9 @@
   ],
   "rules": {
     "function-blacklist": [
-      "calc"
+      "calc",
+      "lighten",
+      "darken"
     ],
     "property-blacklist": [
       "border-radius",
