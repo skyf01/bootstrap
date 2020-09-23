@@ -270,7 +270,7 @@ $body-text-align:           null !default;
 $link-color:                              $primary !default;
 $link-decoration:                         underline !default;
 $link-shade-percentage:                   20% !default;
-$link-hover-color:                        shade-color($link-color, $link-shade-percentage) !default;
+$link-hover-color:                        scale-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
 
 $stretched-link-pseudo-element:           after !default;
@@ -526,15 +526,15 @@ $table-group-separator-color: currentColor !default;
 
 $table-caption-color:         $text-muted !default;
 
-$table-bg-level:              -80% !default;
+$table-bg-scale:              -80% !default;
 
 $table-variants: (
-  "primary":    color-level($primary, $table-bg-level),
-  "secondary":  color-level($secondary, $table-bg-level),
-  "success":    color-level($success, $table-bg-level),
-  "info":       color-level($info, $table-bg-level),
-  "warning":    color-level($warning, $table-bg-level),
-  "danger":     color-level($danger, $table-bg-level),
+  "primary":    scale-color($primary, $table-bg-scale),
+  "secondary":  scale-color($secondary, $table-bg-scale),
+  "success":    scale-color($success, $table-bg-scale),
+  "info":       scale-color($info, $table-bg-scale),
+  "warning":    scale-color($warning, $table-bg-scale),
+  "danger":     scale-color($danger, $table-bg-scale),
   "light":      $light,
   "dark":       $dark,
 ) !default;
@@ -1148,9 +1148,9 @@ $alert-border-radius:               $border-radius !default;
 $alert-link-font-weight:            $font-weight-bold !default;
 $alert-border-width:                $border-width !default;
 
-$alert-bg-level:                    -80% !default;
-$alert-border-level:                -70% !default;
-$alert-color-level:                 50% !default;
+$alert-bg-scale:                    -80% !default;
+$alert-border-scale:                -70% !default;
+$alert-color-scale:                 50% !default;
 
 $alert-dismissible-padding-r:       $alert-padding-x * 3 !default; // 3x covers width of x plus default padding on either side
 
@@ -1178,8 +1178,8 @@ $list-group-border-radius:          $border-radius !default;
 
 $list-group-item-padding-y:         $spacer / 2 !default;
 $list-group-item-padding-x:         $spacer !default;
-$list-group-item-bg-level:          -80% !default;
-$list-group-item-color-level:       50% !default;
+$list-group-item-bg-scale:          -80% !default;
+$list-group-item-color-scale:       50% !default;
 
 $list-group-hover-bg:               $gray-100 !default;
 $list-group-active-color:           $component-active-color !default;
